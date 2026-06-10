@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stream TvFast – Televisión por Internet | +1.300 Canales HD, Películas y Series</title>
+  <meta name="description" content="Stream TvFast: televisión por Internet con +1.300 canales HD, +6.700 películas y +2.200 series. Fútbol, Torneo Nacional, Copa Libertadores y más. Actívate hoy.">
+  <meta name="keywords" content="televisión por internet Chile, canales HD online, series películas streaming, fútbol online Chile, IPTV Chile, Torneo Nacional online">
+  <meta name="author" content="Stream TvFast">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://tvfaststream.com/">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="https://tvfaststream.com/img/logoSinFondo.png" type="image/x-icon">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tvfaststream.com/">
+  <meta property="og:title" content="Stream TvFast – Televisión por Internet | +1.300 Canales HD">
+  <meta property="og:description" content="Más de 1.300 canales HD, 6.700 películas y 2.200 series. Actívate en minutos, sin contrato.">
+  <meta property="og:image" content="https://tvfaststream.com/img/og-image.jpg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://tvfaststream.com/">
+  <meta name="twitter:title" content="Stream TvFast – Televisión por Internet">
+  <meta name="twitter:description" content="Más de 1.300 canales HD, 6.700 películas y 2.200 series. Actívate en minutos, sin contrato.">
+  <meta name="twitter:image" content="https://tvfaststream.com/img/twitter-image.jpg">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "Stream TvFast",
+        "url": "https://tvfaststream.com/",
+        "logo": "https://tvfaststream.com/img/logoSinFondo.png",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+56994940840",
+          "contactType": "customer service",
+          "availableLanguage": "Spanish"
+        },
+        "sameAs": [
+          "https://www.facebook.com/profile.php?id=100087669317087"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "name": "Stream TvFast",
+        "url": "https://tvfaststream.com/"
+      },
+      {
+        "@type": "Service",
+        "name": "Televisión por Internet Stream TvFast",
+        "provider": { "@type": "Organization", "name": "Stream TvFast" },
+        "description": "Servicio de televisión por Internet con más de 1.300 canales HD, 6.700 películas y 2.200 series.",
+        "areaServed": "CL",
+        "offers": {
+          "@type": "Offer",
+          "price": "7000",
+          "priceCurrency": "CLP"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Anta&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+  <!-- ═══════════════════════ HEADER ═══════════════════════ -->
+  <header class="header" role="banner">
+    <div class="container header__inner">
+      <a href="/" class="logo" aria-label="Stream TvFast – Inicio">
+        <img src="./img/logoSinFondo.png" alt="Stream TvFast" class="logo-img">
+      </a>
+      <nav class="navbar" aria-label="Navegación principal">
+        <ul class="nav-links">
+          <li><a href="#hero">Inicio</a></li>
+          <li><a href="#planes">Planes</a></li>
+          <li><a href="#catalogo">Catálogo</a></li>
+          <li><a href="#revendedores">Revendedores</a></li>
+          <li><a href="#dispositivos">Dispositivos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <button class="menu-icon" aria-label="Abrir menú" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════ HERO ═══════════════════════ -->
+  <section id="hero" class="hero" aria-label="Portada">
+    <canvas id="hero-canvas" aria-hidden="true"></canvas>
+    <div class="hero__overlay" aria-hidden="true"></div>
+
+    <div class="container hero__content">
+      <div class="hero__badge">Televisión por Internet</div>
+      <h1 class="hero__title">Stream <span class="hero__accent">TvFast</span></h1>
+      <p class="hero__sub">+1.300 canales HD · +6.700 películas · +2.200 series</p>
+      <p class="hero__tagline">3 dispositivos simultáneos · Activación en minutos · Sin contrato</p>
+      <div class="hero__ctas">
+        <a href="https://wa.me/56994940840" target="_blank" rel="noopener" class="btn btn--primary">
+          <i class="fab fa-whatsapp"></i> Prueba Gratis
+        </a>
+        <a href="#planes" class="btn btn--ghost">Ver Planes</a>
+      </div>
+    </div>
+
+    <div class="hero__stats" aria-label="Estadísticas del servicio">
+      <div class="hero__stat">
+        <span class="hero__stat-num" data-target="1300">0</span><span>+</span>
+        <span class="hero__stat-label">Canales HD</span>
+      </div>
+      <div class="hero__stat">
+        <span class="hero__stat-num" data-target="6700">0</span><span>+</span>
+        <span class="hero__stat-label">Películas</span>
+      </div>
+      <div class="hero__stat">
+        <span class="hero__stat-num" data-target="2200">0</span><span>+</span>
+        <span class="hero__stat-label">Series</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ PLANES ═══════════════════════ -->
+  <section id="planes" class="planes" aria-labelledby="planes-title">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Sin contrato · Sin permanencia</span>
+        <h2 id="planes-title" class="section-title">Elige tu Plan</h2>
+        <p class="section-desc">Todos los planes incluyen acceso completo: canales, películas, series y deportes en HD.</p>
+      </div>
+
+      <div class="planes__grid planes__grid--4">
+
+        <!-- PLAN A -->
+        <div class="plan-card">
+          <div class="plan-card__label">Plan A</div>
+          <div class="plan-card__header">
+            <span class="plan-card__duration">1 Mes</span>
+            <div class="plan-card__price">
+              <span class="plan-card__clp">$8.000</span>
+              <span class="plan-card__usd">≈ USD 9</span>
+            </div>
+            <span class="plan-card__devices">3 dispositivos simultáneos</span>
+          </div>
+          <ul class="plan-card__features">
+            <li><i class="fas fa-check"></i> +1.300 canales HD</li>
+            <li><i class="fas fa-check"></i> Fútbol y deportes completos</li>
+            <li><i class="fas fa-check"></i> +6.700 películas</li>
+            <li><i class="fas fa-check"></i> +2.200 series</li>
+            <li><i class="fas fa-check"></i> Activación inmediata</li>
+          </ul>
+          <a href="https://wa.me/56994940840" target="_blank" rel="noopener" class="btn btn--plan">Contratar</a>
+        </div>
+
+        <!-- PLAN B -->
+        <div class="plan-card plan-card--featured">
+          <div class="plan-card__badge">Más Popular</div>
+          <div class="plan-card__label">Plan B</div>
+          <div class="plan-card__header">
+            <span class="plan-card__duration">3 Meses</span>
+            <div class="plan-card__price">
+              <span class="plan-card__clp">$16.000</span>
+              <span class="plan-card__usd">≈ USD 17</span>
+            </div>
+            <span class="plan-card__save">Pagas 2, disfrutas 3 🎉</span>
+            <span class="plan-card__devices">3 dispositivos simultáneos</span>
+          </div>
+          <ul class="plan-card__features">
+            <li><i class="fas fa-check"></i> +1.300 canales HD</li>
+            <li><i class="fas fa-check"></i> Fútbol y deportes completos</li>
+            <li><i class="fas fa-check"></i> +6.700 películas</li>
+            <li><i class="fas fa-check"></i> +2.200 series</li>
+            <li><i class="fas fa-star"></i> 1 mes de regalo</li>
+          </ul>
+          <a href="https://wa.me/56994940840" target="_blank" rel="noopener" class="btn btn--plan btn--plan-featured">Contratar</a>
+        </div>
+
+        <!-- PLAN D -->
+        <div class="plan-card">
+          <div class="plan-card__label">Plan D</div>
+          <div class="plan-card__header">
+            <span class="plan-card__duration">6 Meses</span>
+            <div class="plan-card__price">
+              <span class="plan-card__clp">$32.000</span>
+              <span class="plan-card__usd">≈ USD 35</span>
+            </div>
+            <span class="plan-card__save">Pagas 4, disfrutas 6 🎉</span>
+            <span class="plan-card__devices">3 dispositivos simultáneos</span>
+          </div>
+          <ul class="plan-card__features">
+            <li><i class="fas fa-check"></i> +1.300 canales HD</li>
+            <li><i class="fas fa-check"></i> Fútbol y deportes completos</li>
+            <li><i class="fas fa-check"></i> +6.700 películas</li>
+            <li><i class="fas fa-check"></i> +2.200 series</li>
+            <li><i class="fas fa-star"></i> 2 meses de regalo</li>
+          </ul>
+          <a href="https://wa.me/56994940840" target="_blank" rel="noopener" class="btn btn--plan">Contratar</a>
+        </div>
+
+        <!-- PLAN E -->
+        <div class="plan-card plan-card--anual">
+          <div class="plan-card__badge plan-card__badge--gold">Mejor Precio</div>
+          <div class="plan-card__label">Plan E</div>
+          <div class="plan-card__header">
+            <span class="plan-card__duration">12 Meses</span>
+            <div class="plan-card__price">
+              <span class="plan-card__clp">$64.000</span>
+              <span class="plan-card__usd">≈ USD 70</span>
+            </div>
+            <span class="plan-card__save">Pagas 8, disfrutas 12 🎉</span>
+            <span class="plan-card__devices">3 dispositivos simultáneos</span>
+          </div>
+          <ul class="plan-card__features">
+            <li><i class="fas fa-check"></i> +1.300 canales HD</li>
+            <li><i class="fas fa-check"></i> Fútbol y deportes completos</li>
+            <li><i class="fas fa-check"></i> +6.700 películas</li>
+            <li><i class="fas fa-check"></i> +2.200 series</li>
+            <li><i class="fas fa-star"></i> 4 meses de regalo</li>
+          </ul>
+          <a href="https://wa.me/56994940840" target="_blank" rel="noopener" class="btn btn--plan btn--plan-gold">Contratar</a>
+        </div>
+
+      </div>
+
+      <p class="planes__trial">¿Quieres probar antes de comprar? <a href="https://wa.me/56994940840" target="_blank" rel="noopener">Pide tu demo gratis por WhatsApp</a></p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ CATÁLOGO ═══════════════════════ -->
+  <section id="catalogo" class="catalogo" aria-labelledby="catalogo-title">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Contenido actualizado constantemente</span>
+        <h2 id="catalogo-title" class="section-title">Películas y Series</h2>
+      </div>
+      <div class="catalogo__inner">
+        <div class="catalogo__text">
+          <ul class="catalogo__list">
+            <li><strong>+6.700 películas</strong> de todos los géneros y épocas</li>
+            <li><strong>+2.200 series</strong> de las plataformas más populares</li>
+            <li>Estrenos recientes y clásicos de siempre</li>
+            <li>Todo en alta definición</li>
+            <li>Contenido nuevo cada semana</li>
+          </ul>
+          <p class="catalogo__sports">También incluye <strong>Torneo Nacional · Copa Libertadores · Copa Sudamericana · Champions League · NBA · UFC · Fórmula 1 · Tenis</strong> y más.</p>
+        </div>
+        <div class="catalogo__swiper-wrap">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./img/beeteljuice.webp" alt="Beetlejuice" loading="lazy"></div>
+              <div class="swiper-slide"><img src="./img/bigbanTheory.webp" alt="Big Bang Theory" loading="lazy"></div>
+              <div class="swiper-slide"><img src="./img/boorderlands.webp" alt="Borderlands" loading="lazy"></div>
+              <div class="swiper-slide"><img src="./img/deadpool.webp" alt="Deadpool" loading="lazy"></div>
+              <div class="swiper-slide"><img src="./img/elExorcismo.webp" alt="El Exorcismo" loading="lazy"></div>
+              <div class="swiper-slide"><img src="./img/gameOfTrhones.webp" alt="Game of Thrones" loading="lazy"></div>
+              <div class="swiper-slide"><img src="./img/houseofDragon.webp" alt="House of the Dragon" loading="lazy"></div>
+              <div class="swiper-slide"><img src="./img/itEndsWhitsUs.webp" alt="It Ends with Us" loading="lazy"></div>
+              <div class="swiper-slide"><img src="./img/peakyblanders.webp" alt="Peaky Blinders" loading="lazy"></div>
+              <div class="swiper-slide"><img src="./img/severance.webp" alt="Severance" loading="lazy"></div>
+              <div class="swiper-slide"><img src="./img/theCrow.webp" alt="The Crow" loading="lazy"></div>
+              <div class="swiper-slide"><img src="./img/theWildRobot.webp" alt="The Wild Robot" loading="lazy"></div>
+              <div class="swiper-slide"><img src="./img/whiteLotus.webp" alt="White Lotus" loading="lazy"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ REVENDEDORES ═══════════════════════ -->
+  <section id="revendedores" class="revendedores" aria-labelledby="rev-title">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Genera ingresos con Stream TvFast</span>
+        <h2 id="rev-title" class="section-title">Trabaja con Nosotros</h2>
+        <p class="section-desc">Obtén tu panel de gestión, créditos para activar clientes y soporte personalizado.</p>
+      </div>
+
+      <div class="rev__grid rev__grid--5">
+
+        <!-- INICIAL -->
+        <div class="rev-card">
+          <div class="rev-card__icon">📦</div>
+          <h3 class="rev-card__title">Paquete Inicial</h3>
+          <div class="rev-card__credits">30 Créditos</div>
+          <div class="rev-card__price">$60.000 <span>CLP</span> <span class="rev-card__usd">/ $65 USD</span></div>
+          <ul class="rev-card__features">
+            <li>Perfecto para empezar</li>
+            <li>Panel de gestión propio</li>
+            <li>Demos ilimitadas</li>
+            <li>3 dispositivos simultáneos</li>
+            <li>Soporte prioritario</li>
+            <li>Contenido Premium incluido</li>
+          </ul>
+          <a href="https://wa.me/56994940840" target="_blank" rel="noopener" class="btn btn--rev">Comenzar</a>
+        </div>
+
+        <!-- PROFESIONAL -->
+        <div class="rev-card">
+          <div class="rev-card__icon">🚀</div>
+          <h3 class="rev-card__title">Paquete Profesional</h3>
+          <div class="rev-card__credits">45 Créditos</div>
+          <div class="rev-card__price">$85.000 <span>CLP</span> <span class="rev-card__usd">/ $92 USD</span></div>
+          <ul class="rev-card__features">
+            <li>Ideal para crecimiento rápido</li>
+            <li>Todo lo del plan anterior</li>
+            <li>Mayor margen de ganancia</li>
+            <li>Demos ilimitadas</li>
+            <li>Atención personalizada 24/7</li>
+            <li>Contenido Premium incluido</li>
+          </ul>
+          <a href="https://wa.me/56994940840" target="_blank" rel="noopener" class="btn btn--rev">Comenzar</a>
+        </div>
+
+        <!-- AVANZADO -->
+        <div class="rev-card rev-card--featured">
+          <div class="rev-card__badge">Recomendado</div>
+          <div class="rev-card__icon">💎</div>
+          <h3 class="rev-card__title">Paquete Avanzado</h3>
+          <div class="rev-card__credits">70 Créditos</div>
+          <div class="rev-card__price">$125.000 <span>CLP</span> <span class="rev-card__usd">/ $135 USD</span></div>
+          <ul class="rev-card__features">
+            <li>Para resellers establecidos</li>
+            <li>Máxima rentabilidad</li>
+            <li>Sin límites de expansión</li>
+            <li>Demos ilimitadas</li>
+            <li>Asesoría comercial incluida</li>
+            <li>Contenido Premium incluido</li>
+          </ul>
+          <a href="https://wa.me/56994940840" target="_blank" rel="noopener" class="btn btn--rev btn--rev-featured">Comenzar</a>
+        </div>
+
+        <!-- PREMIUM -->
+        <div class="rev-card">
+          <div class="rev-card__icon">🏆</div>
+          <h3 class="rev-card__title">Paquete Premium</h3>
+          <div class="rev-card__credits">100 Créditos</div>
+          <div class="rev-card__price">$170.000 <span>CLP</span> <span class="rev-card__usd">/ $185 USD</span></div>
+          <ul class="rev-card__features">
+            <li>El más vendido</li>
+            <li>Precio por crédito reducido</li>
+            <li>Ventas garantizadas</li>
+            <li>Demos ilimitadas</li>
+            <li>Soporte VIP 24/7</li>
+            <li>Contenido Premium incluido</li>
+          </ul>
+          <a href="https://wa.me/56994940840" target="_blank" rel="noopener" class="btn btn--rev">Comenzar</a>
+        </div>
+
+        <!-- ÉLITE -->
+        <div class="rev-card rev-card--pro">
+          <div class="rev-card__badge rev-card__badge--gold">Élite</div>
+          <div class="rev-card__icon">👑</div>
+          <h3 class="rev-card__title">Paquete Élite</h3>
+          <div class="rev-card__credits">200 Créditos</div>
+          <div class="rev-card__price">$280.000 <span>CLP</span> <span class="rev-card__usd">/ $305 USD</span></div>
+          <ul class="rev-card__features">
+            <li>Máxima inversión, máxima ganancia</li>
+            <li>Mejor costo/beneficio del mercado</li>
+            <li>Para empresarios visionarios</li>
+            <li>Demos ilimitadas</li>
+            <li>Soporte VIP prioritario 24/7</li>
+            <li>App propia + Multiplataforma</li>
+          </ul>
+          <a href="https://wa.me/56994940840" target="_blank" rel="noopener" class="btn btn--rev btn--rev-gold">Comenzar</a>
+        </div>
+
+      </div>
+
+      <!-- Incluido en todos -->
+      <div class="rev__included">
+        <h4 class="rev__included-title">✅ Incluido en todos los planes</h4>
+        <ul class="rev__included-list">
+          <li><i class="fas fa-check"></i> Panel profesional de gestión</li>
+          <li><i class="fas fa-check"></i> Demos ilimitadas</li>
+          <li><i class="fas fa-check"></i> Servicio 99.9% estable</li>
+          <li><i class="fas fa-check"></i> Soporte VIP 24/7</li>
+          <li><i class="fas fa-check"></i> Contenido Premium actualizado</li>
+          <li><i class="fas fa-check"></i> App propia + Multiplataforma</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ DISPOSITIVOS ═══════════════════════ -->
+  <section id="dispositivos" class="dispositivos" aria-labelledby="dev-title">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Compatible con tu pantalla favorita</span>
+        <h2 id="dev-title" class="section-title">Dispositivos Compatibles</h2>
+      </div>
+    </div>
+
+    <!-- Slider de ancho completo -->
+    <div class="devices-track-wrap" aria-hidden="true">
+      <div class="devices-track">
+        <!-- duplicado para loop CSS infinito -->
+        <div class="devices-track__inner">
+          <div class="device-item"><img src="./img/mac.png" alt="Apple"><span>Apple</span></div>
+          <div class="device-item"><img src="./img/android-logo-2.svg" alt="Android"><span>Android</span></div>
+          <div class="device-item"><img src="./img/samsung-8.svg" alt="Samsung"><span>Samsung TV</span></div>
+          <div class="device-item"><img src="./img/logo-lg.svg" alt="LG"><span>LG Smart TV</span></div>
+          <div class="device-item"><img src="./img/hisense-1.svg" alt="Hisense"><span>Hisense</span></div>
+          <div class="device-item"><img src="./img/firestick1.png" alt="Fire TV Stick"><span>Fire TV Stick</span></div>
+          <div class="device-item"><img src="./img/chromecast-logo1.png" alt="Chromecast"><span>Chromecast</span></div>
+          <div class="device-item"><img src="./img/tvbox1.png" alt="TV Box Android"><span>TV Box</span></div>
+          <div class="device-item"><img src="./img/microsoft-windows-22.svg" alt="Windows"><span>Windows</span></div>
+        </div>
+        <!-- Copia para loop -->
+        <div class="devices-track__inner" aria-hidden="true">
+          <div class="device-item"><img src="./img/mac.png" alt=""><span>Apple</span></div>
+          <div class="device-item"><img src="./img/android-logo-2.svg" alt=""><span>Android</span></div>
+          <div class="device-item"><img src="./img/samsung-8.svg" alt=""><span>Samsung TV</span></div>
+          <div class="device-item"><img src="./img/logo-lg.svg" alt=""><span>LG Smart TV</span></div>
+          <div class="device-item"><img src="./img/hisense-1.svg" alt=""><span>Hisense</span></div>
+          <div class="device-item"><img src="./img/firestick1.png" alt=""><span>Fire TV Stick</span></div>
+          <div class="device-item"><img src="./img/chromecast-logo1.png" alt=""><span>Chromecast</span></div>
+          <div class="device-item"><img src="./img/tvbox1.png" alt=""><span>TV Box</span></div>
+          <div class="device-item"><img src="./img/microsoft-windows-22.svg" alt=""><span>Windows</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Features -->
+    <div class="container">
+      <div class="features">
+        <div class="feature">
+          <i class="fas fa-file-contract" aria-hidden="true"></i>
+          <h3>Sin Contratos</h3>
+          <p>Sin permanencia ni compromisos a largo plazo.</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+          <h3>Multidispositivo</h3>
+          <p>3 pantallas activas al mismo tiempo.</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-bolt" aria-hidden="true"></i>
+          <h3>Activación Rápida</h3>
+          <p>Listo en minutos desde que pagas.</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-sync" aria-hidden="true"></i>
+          <h3>Contenido Fresco</h3>
+          <p>Nuevos títulos y canales cada semana.</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-headset" aria-hidden="true"></i>
+          <h3>Soporte Real</h3>
+          <p>Atención directa por WhatsApp cuando lo necesites.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ CONTACTO ═══════════════════════ -->
+  <section id="contacto" class="contacto" aria-labelledby="contact-title">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Respuesta rápida garantizada</span>
+        <h2 id="contact-title" class="section-title">Contacto</h2>
+      </div>
+      <div class="contacto__inner">
+        <div class="contacto__info">
+          <p>¿Tienes dudas sobre el servicio o quieres activar tu cuenta? Escríbenos por WhatsApp o usa el formulario.</p>
+          <a href="https://wa.me/56994940840" target="_blank" rel="noopener" class="btn btn--primary contacto__wa">
+            <i class="fab fa-whatsapp"></i> Escribir por WhatsApp
+          </a>
+        </div>
+        <form class="contacto__form" action="enviar.php" method="POST" novalidate>
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required autocomplete="name">
+          </div>
+          <div class="form-group">
+            <label for="email">Correo</label>
+            <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required autocomplete="email">
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" placeholder="¿En qué te podemos ayudar?" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">Enviar mensaje</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="./img/logoSinFondo.png" alt="Stream TvFast" class="footer__logo">
+        <p>Televisión por Internet de calidad,<br>sin complicaciones.</p>
+      </div>
+      <nav class="footer__links" aria-label="Links del pie de página">
+        <a href="#planes">Planes</a>
+        <a href="#revendedores">Revendedores</a>
+        <a href="#dispositivos">Dispositivos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="footer__social">
+        <a href="https://web.facebook.com/profile.php?id=100087669317087" target="_blank" rel="noopener" class="social-icon" id="facebook" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="social-icon" id="instagram" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/56994940840" target="_blank" rel="noopener" class="social-icon" id="whatsapp" aria-label="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2026 Stream TvFast. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./javascript/main.js"></script>
+</body>
+</html>

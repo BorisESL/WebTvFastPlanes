@@ -1,0 +1,37 @@
+# Stream TvFast – Apache config para Hostinger
+
+Options -Indexes
+
+# ── Forzar sin www (canonical sin www) ──────────────
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.tvfaststream\.com [NC]
+RewriteRule ^(.*)$ https://tvfaststream.com/$1 [R=301,L]
+
+# ── Forzar HTTPS ─────────────────────────────────────
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# ── Compresión GZIP ─────────────────────────────────
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css
+  AddOutputFilterByType DEFLATE application/javascript application/json
+  AddOutputFilterByType DEFLATE image/svg+xml application/xml
+</IfModule>
+
+# ── Caché navegador ─────────────────────────────────
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/webp          "access plus 6 months"
+  ExpiresByType image/png           "access plus 6 months"
+  ExpiresByType image/svg+xml       "access plus 6 months"
+  ExpiresByType text/css            "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType text/html           "access plus 1 day"
+</IfModule>
+
+# ── Seguridad básica ────────────────────────────────
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
